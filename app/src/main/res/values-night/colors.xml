@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="tally_col_disconnected_fg">#6C6C6C</color>
+    <color name="tally_col_disconnected_bg">#252525</color>
+    <color name="tally_col_connecting_fg">#006398</color>
+    <color name="tally_col_connecting_bg">#01163A</color>
+    <color name="tally_col_standby_fg">#10FA1B</color>
+    <color name="tally_col_standby_bg">#0D350F</color>
+    <color name="tally_col_active_fg">#FF0000</color>
+    <color name="tally_col_active_bg">#420202</color>
+    <color name="tally_col_error_fg">#FFB600</color>
+    <color name="tally_col_error_bg">#433001</color>
+    <color name="global_bg">#000000</color>
+    <color name="global_fg">#FFFFFF</color>
+</resources>

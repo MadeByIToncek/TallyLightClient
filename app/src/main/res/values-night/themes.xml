@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TallyLight" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/global_bg</item>
+        <item name="android:textColorPrimary">@color/global_fg</item>
+        <item name="android:statusBarColor">@color/global_bg</item>
+    </style>
+</resources>

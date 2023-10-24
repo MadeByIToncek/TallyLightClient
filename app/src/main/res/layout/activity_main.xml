@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tally_bg"
+        android:layout_width="0dp"
+        android:layout_height="304dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/tally_col_disconnected_bg"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tally_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:autoSizeMaxTextSize="96sp"
+                android:autoSizeMinTextSize="40sp"
+                android:autoSizeTextType="uniform"
+                android:breakStrategy="balanced"
+                android:fontFamily="@font/vcr"
+                android:maxLines="1"
+                android:text="@string/tally_txt_disconnected"
+                android:textColor="@color/tally_col_disconnected_fg"
+                android:textSize="60sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/input_txt_source"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="a_desktop"
+        android:textColor="@color/global_fg"
+        app:layout_constraintBottom_toBottomOf="@+id/submit"
+        app:layout_constraintEnd_toStartOf="@+id/submit"
+        app:layout_constraintStart_toStartOf="@+id/ip"
+        app:layout_constraintTop_toTopOf="@+id/submit" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/tally_col_disconnected_bg"
+        android:backgroundTintMode="add"
+        android:text="@string/input_txt_submit"
+        android:textColor="@color/global_fg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip" />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_name_version"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/input_txt_ip"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="ws://localhost:5555"
+        app:layout_constraintEnd_toEndOf="@+id/submit"
+        app:layout_constraintStart_toStartOf="@+id/tally_bg"
+        app:layout_constraintTop_toBottomOf="@+id/tally_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

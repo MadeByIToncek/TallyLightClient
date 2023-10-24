@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TallyLight</string>
+    <string name="tally_txt_disconnected">ODPOJENO</string>
+    <string name="tally_txt_error">CHYBA</string>
+    <string name="input_txt_submit">Aplikovat změny</string>
+    <string name="input_txt_source">Identifikátor zdroje</string>
+    <string name="input_txt_ip">IP Adresa</string>
+    <string name="input_txt_port">Port #</string>
+</resources>

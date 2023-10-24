@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TallyLight</string>
+    <string name="tally_txt_disconnected">DISCONNECTED</string>
+    <string name="tally_txt_connecting" translatable="false">CONNECTING</string>
+    <string name="tally_txt_standby" translatable="false">STANDBY</string>
+    <string name="tally_txt_active" translatable="false">ACTIVE</string>
+    <string name="tally_txt_error">ERROR</string>
+    <string name="input_txt_submit">Submit</string>
+    <string name="input_txt_source">Source identificator</string>
+    <string name="input_txt_ip" >IP Address</string>
+    <string name="input_txt_port">Port #</string>
+    <string name="input_txt_password">Password</string>
+    <string name="app_name_version">TallyLight v1.0-SNAPSHOT</string>
+</resources>
